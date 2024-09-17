@@ -1,7 +1,7 @@
 import React from "react";
 import CounterComponent from "./Components/CounterComponent";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import TodoApp from "./Components/TodoApp";
+import OptimizedTodoApp from "./Components/OptimizedTodo";
 
 const AppContiner = () => {
   const router = createBrowserRouter([
@@ -9,7 +9,7 @@ const AppContiner = () => {
       path: "/",
       element: <CounterComponent />,
     },
-    { path: "/Todo", element: <TodoApp /> },
+    { path: "/Todo", element: <OptimizedTodoApp /> },
   ]);
   return (
     <div>
